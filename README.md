@@ -1,6 +1,8 @@
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans p-8">
+
+      {/* Header */}
       <header className="bg-white shadow p-4 mb-8">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <h1 className="text-xl font-bold">LearnFree Digital</h1>
@@ -12,13 +14,13 @@ export default function Home() {
         </div>
       </header>
 
+      {/* Hero */}
       <section className="max-w-6xl mx-auto text-center mb-8">
         <h2 className="text-3xl font-bold">Free & Digital Learning for All</h2>
-        <p className="mt-2 text-slate-600">
-          Empowering youth with digital skills and practical knowledge.
-        </p>
+        <p className="mt-2 text-slate-600">Empowering youth with digital skills and practical knowledge.</p>
       </section>
 
+      {/* About */}
       <section id="about" className="max-w-6xl mx-auto bg-white rounded shadow p-8 mb-8">
         <h3 className="text-2xl font-bold">About LearnFree Digital</h3>
         <p className="mt-2 text-slate-600">
@@ -26,6 +28,7 @@ export default function Home() {
         </p>
       </section>
 
+      {/* Programs */}
       <section id="programs" className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
         <div className="p-4 bg-white rounded shadow">
           <h4 className="font-bold">Digital Skills</h4>
@@ -45,10 +48,24 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Contact / Location */}
+      <section id="contact" className="max-w-6xl mx-auto bg-white rounded shadow p-8 mb-8">
+        <h3 className="text-2xl font-bold mb-4">Contact & Location</h3>
+        <p className="text-slate-600">📍 Location: Mwanza, Tanzania</p>
+        <p className="text-slate-600 mt-1">📞 Phone: +255 752 651 956</p>
+        <p className="text-slate-600 mt-1">📧 Email: <a href="mailto:info@learnfreedigital.com" className="text-sky-600 underline">info@learnfreedigital.com</a></p>
+
+        <div className="mt-4 space-x-4">
+          <a href="https://youtu.be/" target="_blank" className="text-red-600 underline">YouTube</a>
+          <a href="https://tiktok.com/" target="_blank" className="text-black underline">TikTok</a>
+        </div>
+      </section>
+
+      {/* Footer */}
       <footer className="text-center p-4 bg-white text-slate-600 text-sm">
         © 2026 LearnFree Digital. All rights reserved.
       </footer>
+
     </div>
   );
-}# LearnFree-Digital
-Empowering youth with digital skills
+}
